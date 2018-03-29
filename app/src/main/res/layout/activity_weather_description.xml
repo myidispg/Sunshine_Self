@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#455A64"
+    tools:context="com.example.prashantgoyal.sunshine_self.WeatherDescriptionActivity">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_desc_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="20dp"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/desc_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                tools:text="Saturday, September 24"/>
+            <ImageView
+                android:id="@+id/desc_weather_icon"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:adjustViewBounds="true"
+                android:layout_below="@id/desc_date"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="36dp"
+                tools:src="@drawable/art_clouds"/>
+            <TextView
+                android:id="@+id/desc_weather_condition"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/desc_weather_icon"
+                android:textColor="@color/secondary_text"
+                android:layout_alignLeft="@id/desc_weather_icon"
+                android:textSize="20sp"
+                tools:text="Rainy"/>
+            <TextView
+                android:id="@+id/desc_high_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/primary_text"
+                android:textSize="72sp"
+                tools:text="19\u00b0"
+                android:layout_alignTop="@id/desc_weather_icon"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="26dp"/>
+
+            <TextView
+                android:id="@+id/desc_low_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/desc_weather_condition"
+                android:layout_alignBottom="@+id/desc_weather_condition"
+                android:layout_alignStart="@+id/desc_high_temp"
+                android:layout_marginStart="18dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/secondary_text"
+                android:textSize="36sp"
+                tools:text="10\u00b0" />
+        </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_layout_desc_top">
+        <RelativeLayout
+            android:id="@+id/relative_layout_desc_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:id="@+id/desc_humidity_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22sp"
+                android:text="@string/humidity_label"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textColor="#90A4AE"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/desc_humidity_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/desc_humidity_label"
+                android:textColor="@color/white"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:textSize="22sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="80dp"
+                tools:text="38%"/>
+            <TextView
+                android:id="@+id/desc_windspeed_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_humidity_label"
+                android:layout_marginStart="22sp"
+                android:text="@string/wind_label"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:textColor="#90A4AE"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/desc_windspeed_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:textSize="22sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@id/desc_humidity_value"
+                android:layout_below="@id/desc_humidity_value"
+                tools:text="4km/h NW"/>
+            <TextView
+                android:layout_below="@id/desc_windspeed_label"
+                android:id="@+id/desc_sunrise_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22sp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:text="@string/sunrise_label"
+                android:textColor="#90A4AE"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/desc_sunrise_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:textSize="22sp"
+                android:layout_below="@id/desc_windspeed_value"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@id/desc_humidity_value"
+                tools:text="6:25 A.M."/>
+            <TextView
+                android:id="@+id/desc_sunset_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22sp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:layout_below="@id/desc_sunrise_label"
+                android:text="@string/sunset_label"
+                android:textColor="#90A4AE"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/desc_sunset_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:textSize="22sp"
+                android:layout_below="@id/desc_sunrise_value"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@id/desc_humidity_value"
+                tools:text="6:50 P.M."/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

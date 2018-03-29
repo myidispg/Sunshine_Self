@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sunshine</string>
+    <string name="humidity_label">Humidity</string>
+    <string name="wind_label">Wind</string>
+    <string name="sunrise_label">Sunrise</string>
+    <string name="sunset_label">Sunset</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about_sunshine">About Sunshine</string>
+    <string name="settings_activity_label">Settings</string>
+    <string name="about_sunshine_Activity_label">About Sunshine</string>
+</resources>

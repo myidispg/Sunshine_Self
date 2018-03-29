@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prashantgoyal.sunshine_self.AboutActivity">
+    <TextView
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This app is created by Prashant Goyal for a college project. This app is not to be used for commercial purposes or distributing on a large scale.\n\nA big thanks to Apixu for providing the weather API that made accessing all the weather forecast data possible.\n\nThe design scheme was borrowed from Google's Udacity tutorial for developing android applications. Apart from that, none of the code was taken from anywhere.\n\nIcon made by Pixel Perfect.\nDownloaded from www.flaticons.com"
+        android:textColor="@color/primary_text"
+        android:fontFamily="sans-serif-medium"
+        />
+
+</RelativeLayout>

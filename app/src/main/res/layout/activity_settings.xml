@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--All this is done to add Preference fragment to Settings Activity-->
+<fragment android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.example.prashantgoyal.sunshine_self.SettingsFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Now go to styles to check for theme-->
+
+
+</fragment>

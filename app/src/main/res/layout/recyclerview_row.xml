@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/touch_selector"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:paddingBottom="20dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/art_clouds"
+        />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toRightOf="@id/weather_icon"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        tools:text="Today,April 03"/>
+    <TextView
+        android:id="@+id/weather_description"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/secondary_text"
+        android:layout_below="@id/date"
+        android:layout_alignStart="@id/date"
+        android:maxLines="2"
+        android:singleLine="false"
+        tools:text="Rainy"/>
+    <TextView
+        android:id="@+id/high_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/primary_text"
+        android:textSize="28sp"
+        android:layout_toLeftOf="@id/low_temperature"
+        tools:text="28\u00b0"  />
+    <TextView
+        android:id="@+id/low_temperature"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="end"
+        android:textSize="28sp"
+        android:layout_alignParentRight="true"
+        tools:text="10\u00b0"  />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="show_celsius"
+        android:summaryOff="Temp. units in Celsius"
+        android:summaryOn="Temp. units in Fahrenheit"
+        android:title="Show in Fahrenheit" />
+
+    <EditTextPreference
+        android:key="city_name"
+        android:title="Select City"
+        android:dialogTitle="Enter the city"
+        />
+
+
+
+</PreferenceScreen>
